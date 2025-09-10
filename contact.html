@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Pallabi Ghosh</title>
+  <meta name="description" content="Portfolio of Pallabi Ghosh — Applied AI Researcher working across Computer Vision, Generative AI, Healthcare & Biometrics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="brand-badge">PG</div> Pallabi Ghosh</div>
+      <nav>
+        <button class="menu-btn" aria-label="Toggle menu"
+          onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+        <div class="nav-links">
+          <a href="index.html" >Home</a>
+          <a href="projects.html" >Projects</a>
+          <a href="publications.html" >Publications</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a class="cta" href="assets/resume.pdf" download>Resume</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+  <section>
+    <div class="container two-col">
+      <div>
+        <h1>Contact</h1>
+        <p class="subtitle">Reach out for collaborations, roles, or speaking opportunities.</p>
+        <form onsubmit="event.preventDefault(); alert('Demo only. Connect to a form service like Formspree to receive messages.');">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button class="cta" type="submit">Send Message</button>
+        </form>
+        <p class="small">Tip: To make this form work, replace the <code>form</code> with a Formspree action URL.</p>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Quick Links</h3>
+          <p><a href="assets/resume.pdf" download>Resume</a> · <a href="publications.html">Publications</a> · <a href="projects.html">Projects</a> · <a href="#">LinkedIn</a></p>
+          <p class="small">© <span id="year"></span> Pallabi Ghosh. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+  <footer>
+    <div class="container">© <span id="year"></span> Pallabi Ghosh · Built with ❤️ and vanilla HTML/CSS — <a href="assets/resume.pdf" download>Download Resume</a></div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

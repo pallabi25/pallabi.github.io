@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications — Pallabi Ghosh</title>
+  <meta name="description" content="Portfolio of Pallabi Ghosh — Applied AI Researcher working across Computer Vision, Generative AI, Healthcare & Biometrics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="brand-badge">PG</div> Pallabi Ghosh</div>
+      <nav>
+        <button class="menu-btn" aria-label="Toggle menu"
+          onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+        <div class="nav-links">
+          <a href="index.html" >Home</a>
+          <a href="projects.html" >Projects</a>
+          <a href="publications.html" aria-current="page">Publications</a>
+          <a href="contact.html" >Contact</a>
+          <a class="cta" href="assets/resume.pdf" download>Resume</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+  <section>
+    <div class="container">
+      <h1>Publications</h1>
+      <p class="subtitle">A short selection. Replace links with your actual DOI/arXiv/PMC/IEEE records.</p>
+
+      <div class="card">
+        <h3>[2024] Diffusion‑based Anomaly Detection for Medical Imaging</h3>
+        <p class="small">Explores patched diffusion guidance for OOD and anomaly segmentation in radiology datasets.</p>
+        <p><a href="#" target="_blank" rel="noopener">arXiv</a> · <a href="#" target="_blank" rel="noopener">Code</a></p>
+      </div>
+
+      <div class="card">
+        <h3>[2023] SCU‑Net/SegFormer for Breast Arterial Calcification</h3>
+        <p class="small">Comparative study on BAC segmentation with clinical relevance.</p>
+        <p><a href="#" target="_blank" rel="noopener">IEEE</a> · <a href="#" target="_blank" rel="noopener">Poster</a></p>
+      </div>
+
+      <div class="card">
+        <h3>[2022] Kinship‑Aware Image Generation and Bias‑Independent Features</h3>
+        <p class="small">Security assessment of family‑based facial synthesis on commercial FR systems.</p>
+        <p><a href="#" target="_blank" rel="noopener">DOI</a> · <a href="#" target="_blank" rel="noopener">Code</a></p>
+      </div>
+
+      <div class="card">
+        <h3>[2021] Counterfeit IC Detection via GAN Augmentation</h3>
+        <p class="small">Synthetic augmentation techniques for rare defect classes in hardware security.</p>
+        <p><a href="#" target="_blank" rel="noopener">IEEE</a></p>
+      </div>
+
+      <div class="actions" style="margin-top:18px">
+        <a class="cta" href="assets/resume.pdf" download>Resume</a>
+        <a class="button" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="button" href="projects.html">Projects</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+  <footer>
+    <div class="container">© <span id="year"></span> Pallabi Ghosh · Built with ❤️ and vanilla HTML/CSS — <a href="assets/resume.pdf" download>Download Resume</a></div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

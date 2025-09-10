@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Pallabi Ghosh</title>
+  <meta name="description" content="Portfolio of Pallabi Ghosh — Applied AI Researcher working across Computer Vision, Generative AI, Healthcare & Biometrics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="brand-badge">PG</div> Pallabi Ghosh</div>
+      <nav>
+        <button class="menu-btn" aria-label="Toggle menu"
+          onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+        <div class="nav-links">
+          <a href="index.html" >Home</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+          <a href="publications.html" >Publications</a>
+          <a href="contact.html" >Contact</a>
+          <a class="cta" href="assets/resume.pdf" download>Resume</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+  <section>
+    <div class="container">
+      <h1>Selected Projects</h1>
+      <p class="subtitle">A few representative works spanning healthcare AI, biometrics security, and generative modeling.</p>
+
+      <div class="grid">
+        <article class="card">
+          <img src="https://picsum.photos/seed/boneage/900/560" alt="Bone Age Estimation preview">
+          <h3>Bone Age Estimation from Chest X‑rays</h3>
+          <p>DenseNet/MedCLIP pipeline for pediatric skeletal age assessment; outlier handling and rigorous validation.</p>
+          <div class="links">
+            <span class="tag">PyTorch</span><span class="tag">MedCLIP</span>
+            <a class="button" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="button" href="#" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://picsum.photos/seed/bac/900/560" alt="BAC Segmentation preview">
+          <h3>BAC Segmentation (Mammography/Tomosynthesis)</h3>
+          <p>SCU‑Net &amp; SegFormer experiments for breast arterial calcification quantification; clinical‑grade metrics.</p>
+          <div class="links">
+            <span class="tag">SegFormer</span><span class="tag">SCU‑Net</span>
+            <a class="button" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="button" href="#" target="_blank" rel="noopener">Poster</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://picsum.photos/seed/ood/900/560" alt="OOD detection preview">
+          <h3>Out‑of‑Distribution Detection</h3>
+          <p>Benchmarked OOD methods for medical imaging; patched diffusion ideas for robust anomaly detection.</p>
+          <div class="links">
+            <span class="tag">Anomaly</span><span class="tag">Diffusion</span>
+            <a class="button" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="button" href="#" target="_blank" rel="noopener">Slides</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://picsum.photos/seed/kinship/900/560" alt="Kinship-aware generation preview">
+          <h3>Kinship‑Aware Image Generation</h3>
+          <p>Investigated risks of synthetic kinship images on commercial face recognition; bias‑independent features.</p>
+          <div class="links">
+            <span class="tag">GANs</span><span class="tag">Security</span>
+            <a class="button" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="button" href="#" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://picsum.photos/seed/hbf/900/560" alt="Hierarchical Bloom Filter preview">
+          <h3>Hierarchical Bloom Filters for Biometrics</h3>
+          <p>Designed HBF to improve resilience vs classical BF while preserving soft‑biometric privacy at scale.</p>
+          <div class="links">
+            <span class="tag">Security</span><span class="tag">Bloom Filters</span>
+            <a class="button" href="#" target="_blank" rel="noopener">Code</a>
+            <a class="button" href="#" target="_blank" rel="noopener">Preprint</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://picsum.photos/seed/icgan/900/560" alt="Counterfeit IC GAN preview">
+          <h3>Counterfeit IC Synthesis</h3>
+          <p>GAN‑based augmentation to expand rare defect samples for counterfeit IC detection in cybersecurity.</p>
+          <div class="links">
+            <span class="tag">GANs</span><span class="tag">Quality</span>
+            <a class="button" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="button" href="#" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="actions" style="margin-top:18px">
+        <a class="cta" href="assets/resume.pdf" download>Download Full Resume</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+  <footer>
+    <div class="container">© <span id="year"></span> Pallabi Ghosh · Built with ❤️ and vanilla HTML/CSS — <a href="assets/resume.pdf" download>Download Resume</a></div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

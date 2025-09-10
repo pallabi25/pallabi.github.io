@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pallabi Ghosh | Applied AI Researcher</title>
+  <meta name="description" content="Portfolio of Pallabi Ghosh — Applied AI Researcher working across Computer Vision, Generative AI, Healthcare & Biometrics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="brand-badge">PG</div> Pallabi Ghosh</div>
+      <nav>
+        <button class="menu-btn" aria-label="Toggle menu"
+          onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+        <div class="nav-links">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="projects.html" >Projects</a>
+          <a href="publications.html" >Publications</a>
+          <a href="contact.html" >Contact</a>
+          <a class="cta" href="assets/resume.pdf" download>Resume</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <section class="container two-col">
+      <div>
+        <h1>Pallabi Ghosh</h1>
+        <p class="subtitle">Applied AI • Computer Vision • Generative AI • Healthcare &amp; Biometrics</p>
+        <div class="actions">
+          <a class="cta" href="assets/resume.pdf" download aria-label="Download Resume (PDF)">Download Resume</a>
+          <a class="button" href="projects.html">View Projects</a>
+          <a class="button" href="contact.html">Contact Me</a>
+        </div>
+      </div>
+      <div class="avatar-wrap">
+        <img class="avatar" src="assets/headshot.JPG" alt="Pallabi Ghosh headshot (placeholder)" />
+        <div class="note small">Replace with <code>assets/headshot.jpg</code> when ready.</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container two-col">
+        <div>
+          <h2>About</h2>
+          <p>I’m an applied AI researcher with 6+ years across computer vision, generative models.</p>
+          <ul>
+            <li>Hands‑on with PyTorch, TensorFlow, ViTs, and diffusion models.</li>
+            <li>Publications, patents, and cross‑functional product collaborations.</li>
+          </ul>
+          <p>Need the one‑pager? <a href="assets/resume.pdf" download>Grab my resume</a>.</p>
+        </div>
+        <div>
+          <img class="img" src="https://picsum.photos/seed/lab/900/700" alt="AI Lab themed image" />
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <div class="container">© <span id="year"></span> Pallabi Ghosh <a href="assets/resume.pdf" download>Download Resume</a></div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
